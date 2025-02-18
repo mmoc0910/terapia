@@ -14,12 +14,12 @@ export function ServiceDetail() {
   const booking = async ({ appointmentTime }: { appointmentTime: string }) => {
     try {
       console.log("appointmentTime ~ ", appointmentTime);
-     const res =  await FetchApi.booking({
+      const res = await FetchApi.booking({
         appointmentTime,
         expertId: data.expertId._id,
         serviceId: data._id,
       });
-      console.log('res ~', res)
+      console.log("res ~", res);
       toast.success("Bạn đã đặt lịch thành công!");
     } catch (error) {
       console.logo(error);
@@ -65,8 +65,9 @@ export function ServiceDetail() {
                 <h2 className="display-6 mb-4">
                   {formatVND(data.price)} - {data.duration} minutes
                 </h2>
-                <h3 className="mb-4" style={{fontSize: '24px'}}>
-                 Chuyên gia thực hiện: {data.expertId.fullName} - {data.expertId.email}
+                <h3 className="mb-4" style={{ fontSize: "24px" }}>
+                  Chuyên gia thực hiện: {data.expertId.fullName} -{" "}
+                  {data.expertId.email}
                 </h3>
                 <p className="mb-4 display-8">{data.description}</p>
                 <div className="row g-4">
@@ -122,7 +123,7 @@ export function ServiceDetail() {
                   <div className="col-sm-6">
                     <div className="video h-100">
                       <img
-                        src="/img/video-img.jpg"
+                        src={data?.imageUrl || "/img/video-img.jpg"}
                         className="img-fluid rounded w-100 h-100"
                         style={{ objectFit: "cover" }}
                         alt=""
