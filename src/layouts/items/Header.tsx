@@ -91,12 +91,15 @@ export default function Header() {
       </div>
       <div className="container-fluid position-relative p-0">
         <nav className="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
-          <a href="index.html" className="navbar-brand p-0">
-            <h1 className="text-primary m-0">
+          <Link href="/" className="navbar-brand p-0">
+            {/* <h1 className="text-primary m-0">
               <i className="fas fa-star-of-life me-3"></i>Terapia
-            </h1>
-            {/* <!-- <img src="/img/logo.png" alt="Logo"> --> */}
-          </a>
+            </h1> */}
+            <img
+              src="/img/z6330573034820_9551857ff9fac970a1fe2f6816aa97d5.jpg"
+              alt="Logo" style={{width: '200px', objectFit: 'cover'}}
+            />
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
