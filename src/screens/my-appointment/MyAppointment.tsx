@@ -5,6 +5,7 @@ import dayjs from "dayjs";
 
 export default function MyAppointment() {
   const { data } = useQueryMyAppointment();
+  console.log('data ~ ', data)
   return (
     <React.Fragment>
       {" "}
@@ -52,22 +53,22 @@ export default function MyAppointment() {
                       justifyContent: "space-between",
                     }}
                   >
-                    <h5 className="display-6">{item.serviceId.name}</h5>
+                    <h5 className="display-6">{item?.serviceId?.name}</h5>
                     <h6 className="display-6 mb-4">
-                      {formatVND(item.serviceId.price)} -{" "}
-                      {item.serviceId.duration} minutes
+                      {formatVND(item?.serviceId?.price || 0)} -{" "}
+                      {item?.serviceId?.duration} minutes
                     </h6>
                   </div>
                   <h6 className="" style={{ fontSize: "24px" }}>
                     Thời gian thực hiện:{" "}
-                    {dayjs(item.appointmentTime).format("HH:MM DD/MM/YYYY")}
+                    {dayjs(item?.appointmentTime).format("HH:MM DD/MM/YYYY")}
                   </h6>
                   <h3 className="" style={{ fontSize: "24px" }}>
-                    Chuyên gia thực hiện: {item.expertId.fullName} -{" "}
-                    {item.expertId.email}
+                    Chuyên gia thực hiện: {item?.expertId?.fullName} -{" "}
+                    {item?.expertId?.email}
                   </h3>
                   <h3 className="mb-4" style={{ fontSize: "24px" }}>
-                    Trạng thái: {item.status}
+                    Trạng thái: {item?.status}
                   </h3>
                 </div>
               ))}

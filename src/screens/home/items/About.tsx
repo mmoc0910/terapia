@@ -27,26 +27,23 @@ export function About() {
             <div className="section-title text-start mb-5">
               <h4 className="sub-title pe-3 mb-0">About Us</h4>
               <h1 className="display-3 mb-4">
-                We are Ready to Help Improve Your Treatment.
+              Chúng tôi sẵn sàng giúp cải thiện quá trình điều trị của bạn.
               </h1>
-              <p className="mb-4">
+              {/* <p className="mb-4">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
                 deleniti amet at atque sequi quibusdam cumque itaque repudiandae
                 temporibus, eius nam mollitia voluptas maxime veniam
                 necessitatibus saepe in ab? Repellat!
-              </p>
+              </p> */}
               <div className="mb-4">
                 <p className="text-secondary">
-                  <i className="fa fa-check text-primary me-2"></i> Refresing to get
-                  such a personal touch.
+                  <i className="fa fa-check text-primary me-2"></i> Đặt lịch nhanh chóng
                 </p>
                 <p className="text-secondary">
-                  <i className="fa fa-check text-primary me-2"></i> Duis aute irure
-                  dolor in reprehenderit in voluptate.
+                  <i className="fa fa-check text-primary me-2"></i> Dịch vụ chu đáo
                 </p>
                 <p className="text-secondary">
-                  <i className="fa fa-check text-primary me-2"></i> Velit esse
-                  cillum dolore eu fugiat nulla pariatur.
+                  <i className="fa fa-check text-primary me-2"></i> Thanh toán dễ dàng
                 </p>
               </div>
               <a

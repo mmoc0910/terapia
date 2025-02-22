@@ -14,7 +14,8 @@ export function Services() {
             <h4 className="sub-title px-3 mb-0">What We Do</h4>
           </div>
           <h1 className="display-3 mb-4">
-            Our Service Given Physio Therapy By Expert.
+            Dịch vụ vật lý trị liệu của chúng tôi được thực hiện bởi các chuyên
+            gia
           </h1>
           <p className="mb-0">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat

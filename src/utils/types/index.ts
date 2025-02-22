@@ -1,4 +1,5 @@
 export type TAccount = {
+  avatar?: string | null;
   fullName: string;
   email: string;
   role: "user" | "admin";
@@ -17,7 +18,7 @@ export type TAuthResponse = {
 export type TService = {
   _id: string;
   imageUrl?: string;
-  expertId: TAccount;
+  expertId: TAccount[];
   name: string;
   description: string;
   price: number;
@@ -40,3 +41,16 @@ export type TMyAppointment = {
 };
 
 export type TMyAppointmentResponse = TMyAppointment[];
+
+//blog
+export type TBlog = {
+  _id: string;
+  title: string;
+  content: string;
+  author: string;
+  published: boolean;
+  createdAt: Date;
+  updatedAt: Date;
+};
+
+export type TBlogResponse = TBlog[];

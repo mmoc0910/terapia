@@ -1,6 +1,8 @@
 import {
   TAccount,
   TAuthResponse,
+  TBlog,
+  TBlogResponse,
   TMyAppointmentResponse,
   TService,
   TServiceResponse,
@@ -14,6 +16,7 @@ export const Apis = {
   getExperts: "/users/experts",
   booking: "/users/appointments",
   getMyAppointment: "/users/appointments",
+  getBlog: "/blogs",
 };
 
 export const FetchApi = {
@@ -36,10 +39,7 @@ export const FetchApi = {
     );
     return res.data;
   },
-  resetPassword: async (data: {
-    resetToken: string;
-    newPassword: string;
-  }) => {
+  resetPassword: async (data: { resetToken: string; newPassword: string }) => {
     const res = await api.post("/auth/reset-password", data);
     return res.data;
   },
@@ -60,11 +60,20 @@ export const FetchApi = {
     expertId: string;
     serviceId: string;
   }) => {
+    console.log("data ~ ", data);
     const res = await api.post(Apis.booking, data);
     return res.data;
   },
   getMyAppointment: async () => {
     const res = await api.get<TMyAppointmentResponse>(Apis.getMyAppointment);
+    return res.data;
+  },
+  getBlog: async () => {
+    const res = await api.get<TBlogResponse>(Apis.getBlog);
+    return res.data;
+  },
+  getBlogDetail: async (blogId: string) => {
+    const res = await api.get<TBlog>(`${Apis.getBlog}/${blogId}`);
     return res.data;
   },
 };

@@ -1,6 +1,5 @@
-
 import { Route, Routes } from "react-router";
-import {  Home, Login, Register, ServiceDetail } from "./screens";
+import { Home, Login, Register, ServiceDetail } from "./screens";
 import { AuthenLayout, Layout } from "./layouts";
 import { Bounce, ToastContainer } from "react-toastify";
 import React from "react";
@@ -9,6 +8,7 @@ import { ChatBox } from "./components/chat/ChatBox";
 import { useAppAccount } from "./utils";
 import { ForgotPassword } from "./screens/forgot-password/ForgotPassword";
 import { ResetPassword } from "./screens/reset-password/ResetPassword";
+import { BlogDetail } from "./screens/blog-detail/BlogDetail";
 
 function App() {
   const { account } = useAppAccount();
@@ -20,6 +20,7 @@ function App() {
           {/* <Route path="/book-appointment" element={<Appointment />} /> */}
           <Route path="/service/:serviceId" element={<ServiceDetail />} />
           <Route path="/my-appointment" element={<MyAppointment />} />
+          <Route path="/blog/:blogId" element={<BlogDetail />} />
         </Route>
         <Route element={<AuthenLayout />}>
           <Route path="/sign-in" element={<Login />} />

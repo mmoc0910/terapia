@@ -12,7 +12,7 @@ export function Team() {
             <h4 className="sub-title px-3 mb-0">Meet our team</h4>
           </div>
           <h1 className="display-3 mb-4">
-            Physiotherapy Services from Professional Therapist
+          Dịch vụ massage từ các chuyên gia chuyên nghiệp
           </h1>
           <p className="mb-0">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
@@ -30,8 +30,9 @@ export function Team() {
             >
               <div className="team-item rounded">
                 <div className="team-img rounded-top h-100">
-                  <img
-                    src="/img/team-1.jpg"
+                  <img style={{aspectRatio: 0.9, objectFit: 'cover'}}
+                    src={item?.avatar || "/img/team-1.jpg"}
+                    // src={"/img/team-1.jpg"}
                     className="img-fluid rounded-top w-100"
                     alt=""
                   />

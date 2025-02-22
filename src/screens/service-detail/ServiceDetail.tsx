@@ -5,18 +5,25 @@ import { toast } from "react-toastify";
 import { AppInputText } from "../../elements";
 import { useForm } from "react-hook-form";
 import { FetchApi } from "../../utils/FetchApi/FetchApi";
+import { RadioExperts } from "./items/RadioExperts";
 
 export function ServiceDetail() {
   const { control, handleSubmit } = useForm();
   const { data } = useQueryServiceDetail();
   if (!data) return;
 
-  const booking = async ({ appointmentTime }: { appointmentTime: string }) => {
+  const booking = async ({
+    appointmentTime,
+    expertId,
+  }: {
+    appointmentTime: string;
+    expertId: string;
+  }) => {
     try {
-      console.log("appointmentTime ~ ", appointmentTime);
+      console.log("appointmentTime ~ ", appointmentTime, expertId);
       const res = await FetchApi.booking({
         appointmentTime,
-        expertId: data.expertId._id,
+        expertId: expertId,
         serviceId: data._id,
       });
       console.log("res ~", res);
@@ -65,10 +72,10 @@ export function ServiceDetail() {
                 <h2 className="display-6 mb-4">
                   {formatVND(data.price)} - {data.duration} minutes
                 </h2>
-                <h3 className="mb-4" style={{ fontSize: "24px" }}>
+                {/* <h3 className="mb-4" style={{ fontSize: "24px" }}>
                   Chuyên gia thực hiện: {data.expertId.fullName} -{" "}
                   {data.expertId.email}
-                </h3>
+                </h3> */}
                 <p className="mb-4 display-8">{data.description}</p>
                 <div className="row g-4">
                   <div className="col-sm-6">
@@ -99,6 +106,17 @@ export function ServiceDetail() {
                         className="text-start mb-4"
                         onSubmit={handleSubmit(booking)}
                       >
+                        <RadioExperts
+                          experts={data.expertId}
+                          control={control}
+                          name="expertId"
+                          rules={{
+                            required: {
+                              value: true,
+                              message: "This field is required",
+                            },
+                          }}
+                        />
                         <AppInputText
                           type="datetime-local"
                           name="appointmentTime"
@@ -142,83 +160,6 @@ export function ServiceDetail() {
                 </div>
               </div>
             </div>
-            {/* <div className="col-lg-6 wow fadeInRight" data-wow-delay="0.4s">
-              <div className="appointment-form rounded p-5">
-                <p className="fs-4 text-uppercase text-primary">Get In Touch</p>
-                <h1 className="display-5 mb-4">Get Appointment</h1>
-                <form>
-                  <div className="row gy-3 gx-4">
-                    <div className="col-xl-6">
-                      <input
-                        type="text"
-                        className="form-control py-3 border-primary bg-transparent text-white"
-                        placeholder="First Name"
-                      />
-                    </div>
-                    <div className="col-xl-6">
-                      <input
-                        type="email"
-                        className="form-control py-3 border-primary bg-transparent text-white"
-                        placeholder="Email"
-                      />
-                    </div>
-                    <div className="col-xl-6">
-                      <input
-                        type="phone"
-                        className="form-control py-3 border-primary bg-transparent"
-                        placeholder="Phone"
-                      />
-                    </div>
-                    <div className="col-xl-6">
-                      <select
-                        className="form-select py-3 border-primary bg-transparent"
-                        aria-label="Default select example"
-                      >
-                        <option selected>Your Gender</option>
-                        <option value="1">Male</option>
-                        <option value="2">FeMale</option>
-                        <option value="3">Others</option>
-                      </select>
-                    </div>
-                    <div className="col-xl-6">
-                      <input
-                        type="date"
-                        className="form-control py-3 border-primary bg-transparent"
-                      />
-                    </div>
-                    <div className="col-xl-6">
-                      <select
-                        className="form-select py-3 border-primary bg-transparent"
-                        aria-label="Default select example"
-                      >
-                        <option selected>Department</option>
-                        <option value="1">Physiotherapy</option>
-                        <option value="2">Physical Helth</option>
-                        <option value="2">Treatments</option>
-                      </select>
-                    </div>
-                    <div className="col-12">
-                      <textarea
-                        className="form-control border-primary bg-transparent text-white"
-                        name="text"
-                        id="area-text"
-                        cols="30"
-                        rows="5"
-                        placeholder="Write Comments"
-                      ></textarea>
-                    </div>
-                    <div className="col-12">
-                      <button
-                        type="button"
-                        className="btn btn-primary text-white w-100 py-3 px-5"
-                      >
-                        SUBMIT NOW
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div> */}
           </div>
         </div>
       </div>
