@@ -9,7 +9,7 @@ import {
   Testimonial,
 } from "./items";
 import { useGetExperts } from "./methods/useGetExperts";
-import { useGetBlog } from "./methods/usegetBlog";
+import { useGetBlog } from "./methods/useGetBlog";
 import { useGetServices } from "./methods/useGetServices";
 
 export function Home() {

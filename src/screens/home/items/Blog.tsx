@@ -1,5 +1,5 @@
 import React from "react";
-import { useGetBlog } from "../methods/usegetBlog";
+import { useGetBlog } from "../methods/useGetBlog";
 import dayjs from "dayjs";
 import { Link } from "react-router";
 
