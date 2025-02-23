@@ -1,6 +1,6 @@
 import React from "react";
 import { useAppAccount } from "../../utils";
-import { Link, useNavigate } from "react-router";
+import { Link, NavLink, useNavigate } from "react-router";
 
 export default function Header() {
   const navigate = useNavigate();
@@ -17,7 +17,7 @@ export default function Header() {
           to="/sign-in"
           className="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0"
         >
-          Sign in
+          Đăng nhập
         </Link>
       );
     return (
@@ -34,14 +34,14 @@ export default function Header() {
           className="btn btn-warning rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0"
           style={{ marginLeft: "10px" }}
         >
-          Sign out
+          Đăng xuất
         </button>
       </>
     );
   };
   return (
     <React.Fragment>
-      <div className="container-fluid bg-dark px-5 d-none d-lg-block">
+      {/* <div className="container-fluid bg-dark px-5 d-none d-lg-block">
         <div className="row gx-0 align-items-center" style={{ height: "45px" }}>
           <div className="col-lg-8 text-center text-lg-start mb-lg-0">
             <div className="d-flex flex-wrap">
@@ -88,7 +88,7 @@ export default function Header() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="container-fluid position-relative p-0">
         <nav className="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
           <Link href="/" className="navbar-brand p-0">
@@ -97,7 +97,8 @@ export default function Header() {
             </h1> */}
             <img
               src="/img/z6330573034820_9551857ff9fac970a1fe2f6816aa97d5.jpg"
-              alt="Logo" style={{width: '200px', objectFit: 'cover'}}
+              alt="Logo"
+              style={{ width: "200px", objectFit: "cover" }}
             />
           </Link>
           <button
@@ -110,13 +111,43 @@ export default function Header() {
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <div className="navbar-nav ms-auto py-0">
-              <Link to="/" className="nav-item nav-link active">
-                Home
-              </Link>
+              <NavLink
+                to="/"
+                className={({ isActive }) => {
+                  const active = isActive ? "active" : "";
+                  return `nav-item nav-link ${active}`;
+                }}
+              >
+                Trang chủ
+              </NavLink>
+              <NavLink
+                to="/experts"
+                className={({ isActive }) => {
+                  const active = isActive ? "active" : "";
+                  return `nav-item nav-link ${active}`;
+                }}
+              >
+                Chuyên gia
+              </NavLink>
+              <NavLink
+                to="/services"
+                className={({ isActive }) => {
+                  const active = isActive ? "active" : "";
+                  return `nav-item nav-link ${active}`;
+                }}
+              >
+                Dịch vụ
+              </NavLink>
               {account ? (
-                <Link to="/my-appointment" className="nav-item nav-link">
-                  My Appointment
-                </Link>
+                <NavLink
+                  to="/my-appointment"
+                  className={({ isActive }) => {
+                    const active = isActive ? "active" : "";
+                    return `nav-item nav-link ${active}`;
+                  }}
+                >
+                  Lịch sử đặt
+                </NavLink>
               ) : null}
 
               {/* <div className="nav-item dropdown">

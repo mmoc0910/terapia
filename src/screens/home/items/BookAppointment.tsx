@@ -11,12 +11,12 @@ export function BookAppointment() {
               <h1 className="display-4 mb-4">
                 Best Quality Services With Minimal Pain Rate
               </h1>
-              <p className="mb-4">
+              {/* <p className="mb-4">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
                 deleniti amet at atque sequi quibusdam cumque itaque repudiandae
                 temporibus, eius nam mollitia voluptas maxime veniam
                 necessitatibus saepe in ab? Repellat!
-              </p>
+              </p> */}
               <div className="row g-4">
                 <div className="col-sm-6">
                   <div className="d-flex flex-column h-100">
@@ -25,20 +25,20 @@ export function BookAppointment() {
                         <i className="fa fa-check text-primary me-2"></i> Body
                         Relaxation
                       </h5>
-                      <p className="mb-0">
+                      {/* <p className="mb-0">
                         Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit. Et deserunt qui cupiditate veritatis enim ducimus.
-                      </p>
+                      </p> */}
                     </div>
                     <div className="mb-4">
                       <h5 className="mb-3">
                         <i className="fa fa-check text-primary me-2"></i> Body
                         Relaxation
                       </h5>
-                      <p className="mb-0">
+                      {/* <p className="mb-0">
                         Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit. Et deserunt qui cupiditate veritatis enim ducimus.
-                      </p>
+                      </p> */}
                     </div>
                     <div className="text-start mb-4">
                       <a

@@ -9,9 +9,9 @@ export function Layout() {
       <Header />
       <Outlet />
       <Footer />
-      <a href="#" className="btn btn-primary btn-lg-square back-to-top">
+      {/* <a href="#" className="btn btn-primary btn-lg-square back-to-top">
         <i className="fa fa-arrow-up"></i>
-      </a>
+      </a> */}
     </React.Fragment>
   );
 }

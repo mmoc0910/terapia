@@ -23,12 +23,12 @@ export function Testimonial() {
                   alt=""
                 />
               </div>
-              <p className="text-white fs-7">
+              {/* <p className="text-white fs-7">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Asperiores nemo facilis tempora esse explicabo sed! Dignissimos
                 quia ullam pariatur blanditiis sed voluptatum. Totam aut quidem
                 laudantium tempora. Minima, saepe earum!
-              </p>
+              </p> */}
               <div className="text-center">
                 <h5 className="mb-2">John Abraham</h5>
                 <p className="mb-2 text-white-50">New York, USA</p>
@@ -51,12 +51,12 @@ export function Testimonial() {
                   alt=""
                 />
               </div>
-              <p className="text-white fs-7">
+              {/* <p className="text-white fs-7">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Asperiores nemo facilis tempora esse explicabo sed! Dignissimos
                 quia ullam pariatur blanditiis sed voluptatum. Totam aut quidem
                 laudantium tempora. Minima, saepe earum!
-              </p>
+              </p> */}
               <div className="text-center">
                 <h5 className="mb-2">John Abraham</h5>
                 <p className="mb-2 text-white-50">New York, USA</p>
@@ -79,12 +79,12 @@ export function Testimonial() {
                   alt=""
                 />
               </div>
-              <p className="text-white fs-7">
+              {/* <p className="text-white fs-7">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Asperiores nemo facilis tempora esse explicabo sed! Dignissimos
                 quia ullam pariatur blanditiis sed voluptatum. Totam aut quidem
                 laudantium tempora. Minima, saepe earum!
-              </p>
+              </p> */}
               <div className="text-center">
                 <h5 className="mb-2">John Abraham</h5>
                 <p className="mb-2 text-white-50">New York, USA</p>

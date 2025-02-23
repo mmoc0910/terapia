@@ -9,6 +9,8 @@ import { useAppAccount } from "./utils";
 import { ForgotPassword } from "./screens/forgot-password/ForgotPassword";
 import { ResetPassword } from "./screens/reset-password/ResetPassword";
 import { BlogDetail } from "./screens/blog-detail/BlogDetail";
+import { ServicesScreen } from "./screens/services/ServicesScreen";
+import { ExpertsScreen } from "./screens/experts/ExpertsScreen";
 
 function App() {
   const { account } = useAppAccount();
@@ -21,6 +23,8 @@ function App() {
           <Route path="/service/:serviceId" element={<ServiceDetail />} />
           <Route path="/my-appointment" element={<MyAppointment />} />
           <Route path="/blog/:blogId" element={<BlogDetail />} />
+          <Route path="/services" element={<ServicesScreen />} />
+          <Route path="/experts" element={<ExpertsScreen />} />
         </Route>
         <Route element={<AuthenLayout />}>
           <Route path="/sign-in" element={<Login />} />

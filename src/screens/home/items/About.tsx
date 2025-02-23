@@ -20,7 +20,7 @@ export function About() {
                   alt="Image"
                 />
               </div>
-              <div className="about-experience">15 years experience</div>
+              {/* <div className="about-experience">15 years experience</div> */}
             </div>
           </div>
           <div className="col-lg-7 wow fadeInRight" data-wow-delay="0.4s">

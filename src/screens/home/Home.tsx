@@ -6,7 +6,6 @@ import {
   ModalVideo,
   Services,
   Team,
-  Testimonial,
 } from "./items";
 import { useGetExperts } from "./methods/useGetExperts";
 import { useGetBlog } from "./methods/useGetBlog";
@@ -33,14 +32,11 @@ export function Home() {
     );
   return (
     <React.Fragment>
-      {/* <HomeBanner /> */}
       <Services />
       <About />
       <Feature />
-      {/* <BookAppointment /> */}
       <ModalVideo />
       <Team />
-      <Testimonial />
       <Blog />
     </React.Fragment>
   );

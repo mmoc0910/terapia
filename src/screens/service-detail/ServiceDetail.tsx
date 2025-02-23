@@ -6,6 +6,7 @@ import { AppInputText } from "../../elements";
 import { useForm } from "react-hook-form";
 import { FetchApi } from "../../utils/FetchApi/FetchApi";
 import { RadioExperts } from "./items/RadioExperts";
+import { Link } from "react-router";
 
 export function ServiceDetail() {
   const { control, handleSubmit } = useForm();
@@ -44,20 +45,20 @@ export function ServiceDetail() {
             className="text-white display-3 mb-4 wow fadeInDown"
             data-wow-delay="0.1s"
           >
-            Service detail
+            Chi tiết dịch vụ
           </h3>
           <ol
             className="breadcrumb justify-content-center mb-0 wow fadeInDown"
             data-wow-delay="0.3s"
           >
             <li className="breadcrumb-item">
-              <a href="index.html">Home</a>
+              <Link to="/">Trang chủ</Link>
             </li>
             <li className="breadcrumb-item">
               <a href="#">Pages</a>
             </li>
             <li className="breadcrumb-item active text-primary">
-              Service detail
+            Chi tiết dịch vụ
             </li>
           </ol>
         </div>
@@ -67,10 +68,11 @@ export function ServiceDetail() {
           <div className="row g-5 align-items-center">
             <div className="col-lg-12 wow fadeInLeft" data-wow-delay="0.2">
               <div className="section-title text-start">
-                <h4 className="sub-title pe-3 mb-0">Solutions To Your Pain</h4>
+                <h4 className="sub-title pe-3 mb-0">GIẢI PHÁP CHO CƠN ĐAU CỦA BẠN</h4>
                 <h1 className="display-4 mb-4">{data.name}</h1>
                 <h2 className="display-6 mb-4">
-                  {formatVND(data.price)} - {data.duration} minutes
+                  {formatVND(data.price)} 
+                  {/* - {data.duration} minutes */}
                 </h2>
                 {/* <h3 className="mb-4" style={{ fontSize: "24px" }}>
                   Chuyên gia thực hiện: {data.expertId.fullName} -{" "}
@@ -80,28 +82,18 @@ export function ServiceDetail() {
                 <div className="row g-4">
                   <div className="col-sm-6">
                     <div className="d-flex flex-column h-100">
-                      <div className="mb-4">
+                      {/* <div className="mb-4">
                         <h5 className="mb-3">
                           <i className="fa fa-check text-primary me-2"></i> Body
                           Relaxation
                         </h5>
-                        <p className="mb-0">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Et deserunt qui cupiditate veritatis enim
-                          ducimus.
-                        </p>
                       </div>
                       <div className="mb-4">
                         <h5 className="mb-3">
                           <i className="fa fa-check text-primary me-2"></i> Body
                           Relaxation
                         </h5>
-                        <p className="mb-0">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Et deserunt qui cupiditate veritatis enim
-                          ducimus.
-                        </p>
-                      </div>
+                      </div> */}
                       <form
                         className="text-start mb-4"
                         onSubmit={handleSubmit(booking)}
@@ -133,7 +125,7 @@ export function ServiceDetail() {
                           type="submit"
                           className="btn btn-primary rounded-pill text-white py-3 px-5 mt-3"
                         >
-                          Booking service
+                          Đặt dịch vụ
                         </button>
                       </form>
                     </div>

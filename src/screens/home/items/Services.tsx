@@ -17,12 +17,12 @@ export function Services() {
             Dịch vụ vật lý trị liệu của chúng tôi được thực hiện bởi các chuyên
             gia
           </h1>
-          <p className="mb-0">
+          {/* <p className="mb-0">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
             deleniti amet at atque sequi quibusdam cumque itaque repudiandae
             temporibus, eius nam mollitia voluptas maxime veniam necessitatibus
             saepe in ab? Repellat!
-          </p>
+          </p> */}
         </div>
         <div className="row g-4 justify-content-center">
           {data.map((item) => (

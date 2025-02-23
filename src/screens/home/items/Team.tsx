@@ -14,12 +14,12 @@ export function Team() {
           <h1 className="display-3 mb-4">
           Dịch vụ massage từ các chuyên gia chuyên nghiệp
           </h1>
-          <p className="mb-0">
+          {/* <p className="mb-0">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
             deleniti amet at atque sequi quibusdam cumque itaque repudiandae
             temporibus, eius nam mollitia voluptas maxime veniam necessitatibus
             saepe in ab? Repellat!
-          </p>
+          </p> */}
         </div>
         <div className="row g-4 justify-content-center">
           {data.map((item) => (

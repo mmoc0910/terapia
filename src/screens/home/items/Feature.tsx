@@ -9,7 +9,7 @@ export  function Feature() {
                 <h4 className="sub-title px-3 mb-0">Why Choose Us</h4>
             </div>
             <h1 className="display-3 mb-4">Tại sao chọn chúng tôi? Lấy lại phong cách sống của bạn</h1>
-            <p className="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p>
+            {/* <p className="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p> */}
         </div>
         <div className="row g-4 justify-content-center">
             <div className="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
@@ -22,7 +22,7 @@ export  function Feature() {
                         </div>
                         <div className="feature-content d-flex flex-column">
                             <h5 className="mb-4">Nhà trị liệu được cấp phép</h5>
-                            <p className="mb-0">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p>
+                            {/* <p className="mb-0">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p> */}
                         </div>
                     </div>
                 </div>
@@ -37,7 +37,7 @@ export  function Feature() {
                         </div>
                         <div className="feature-content d-flex flex-column">
                             <h5 className="mb-4">Điều trị cá nhân</h5>
-                            <p className="mb-0">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p>
+                            {/* <p className="mb-0">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p> */}
                         </div>
                     </div>
                 </div>
@@ -52,7 +52,7 @@ export  function Feature() {
                         </div>
                         <div className="feature-content d-flex flex-column">
                             <h5 className="mb-4">Mục tiêu trị liệu</h5>
-                            <p className="mb-0">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p>
+                            {/* <p className="mb-0">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p> */}
                         </div>
                     </div>
                 </div>
@@ -67,7 +67,7 @@ export  function Feature() {
                         </div>
                         <div className="feature-content d-flex flex-column">
                             <h5 className="mb-4">Mạng lưới thực hành</h5>
-                            <p className="mb-0">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p>
+                            {/* <p className="mb-0">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p> */}
                         </div>
                     </div>
                 </div>
@@ -82,7 +82,7 @@ export  function Feature() {
                         </div>
                         <div className="feature-content d-flex flex-column">
                             <h5 className="mb-4">Trung tâm thoải mái</h5>
-                            <p className="mb-0">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p>
+                            {/* <p className="mb-0">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p> */}
                         </div>
                     </div>
                 </div>
@@ -97,7 +97,7 @@ export  function Feature() {
                         </div>
                         <div className="feature-content d-flex flex-column">
                             <h5 className="mb-4">Những thứ có kinh nghiệm</h5>
-                            <p className="mb-0">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p>
+                            {/* <p className="mb-0">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p> */}
                         </div>
                     </div>
                 </div>
@@ -112,7 +112,7 @@ export  function Feature() {
                         </div>
                         <div className="feature-content d-flex flex-column">
                             <h5 className="mb-4">Mục tiêu trị liệu</h5>
-                            <p className="mb-0">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p>
+                            {/* <p className="mb-0">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p> */}
                         </div>
                     </div>
                 </div>
@@ -127,7 +127,7 @@ export  function Feature() {
                         </div>
                         <div className="feature-content d-flex flex-column">
                             <h5 className="mb-4">Nhà trị liệu được cấp phép</h5>
-                            <p className="mb-0">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p>
+                            {/* <p className="mb-0">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p> */}
                         </div>
                     </div>
                 </div>

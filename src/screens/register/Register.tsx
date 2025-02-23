@@ -35,7 +35,7 @@ export function Register() {
   if (account) return;
   return (
     <React.Fragment>
-      <h1 className="display-5 mb-4">Register</h1>
+      <h1 className="display-5 mb-4">Đăng ký</h1>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="row gy-3 gx-4">
           <div className="col-xl-12">
@@ -43,9 +43,9 @@ export function Register() {
               name="fullName"
               control={control}
               rules={{
-                required: { value: true, message: "This field is required" },
+                required: { value: true, message: "Không được để trống" },
               }}
-              placeholder="Full Name"
+              placeholder="Họ và tên"
             />
           </div>
           <div className="col-xl-12">
@@ -53,7 +53,7 @@ export function Register() {
               name="email"
               control={control}
               rules={{
-                required: { value: true, message: "This field is required" },
+                required: { value: true, message: "Không được để trống" },
               }}
               placeholder="Email"
               type="email"
@@ -64,10 +64,10 @@ export function Register() {
               name="password"
               control={control}
               rules={{
-                required: { value: true, message: "This field is required" },
+                required: { value: true, message: "Không được để trống" },
               }}
               type="password"
-              placeholder="Password"
+              placeholder="Mật khẩu"
             />
           </div>
           <div className="col-12">
@@ -75,7 +75,7 @@ export function Register() {
               type="submit"
               className="btn btn-primary text-white w-100 py-3 px-5"
             >
-              REGISTER
+              ĐĂNG KÝ
             </button>
           </div>
           <div>

@@ -31,7 +31,7 @@ export function Login() {
   if (account) return;
   return (
     <React.Fragment>
-      <h1 className="display-5 mb-4">Sign in</h1>
+      <h1 className="display-5 mb-4">Đăng nhập</h1>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="row gy-3 gx-4">
           <div className="col-xl-12">
@@ -39,7 +39,7 @@ export function Login() {
               name="email"
               control={control}
               rules={{
-                required: { value: true, message: "This field is required" },
+                required: { value: true, message: "Không được để trống" },
               }}
               placeholder="Email"
               type="email"
@@ -50,10 +50,10 @@ export function Login() {
               name="password"
               control={control}
               rules={{
-                required: { value: true, message: "This field is required" },
+                required: { value: true, message: "Không được để trống" },
               }}
               type="password"
-              placeholder="Password"
+              placeholder="Mật khẩu"
             /><Link to={'/forgot-password'} style={{textAlign: 'right', marginBottom: '0px'}}>Quên mật khẩu?</Link>
           </div>
           <div className="col-12">
@@ -61,7 +61,7 @@ export function Login() {
               type="submit"
               className="btn btn-primary text-white w-100 py-3 px-5"
             >
-              SIGN IN
+              đĂNG NHẬP
             </button>
           </div>
           <div>
