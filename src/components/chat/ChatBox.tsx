@@ -52,7 +52,7 @@ export function ChatBox() {
   };
 
   return (
-    <div style={{ position: "fixed", bottom: "30px", right: "30px" }}>
+    <div style={{ position: "fixed", bottom: "30px", right: "30px", zIndex: 9999 }}>
       <div
         onClick={() => setOpen(!open)}
         style={{

@@ -72,7 +72,7 @@ export function ServiceDetail() {
                 <h1 className="display-4 mb-4">{data.name}</h1>
                 <h2 className="display-6 mb-4">
                   {formatVND(data.price)} 
-                  {/* - {data.duration} minutes */}
+                  - {data.duration} Phút
                 </h2>
                 {/* <h3 className="mb-4" style={{ fontSize: "24px" }}>
                   Chuyên gia thực hiện: {data.expertId.fullName} -{" "}

@@ -24,7 +24,8 @@ export default function Footer() {
                   <i className="fas fa-share fa-2x text-white me-2"></i>
                   <a
                     className="btn-square btn btn-primary text-white rounded-circle mx-1"
-                    href=""
+                    href="https://www.facebook.com/profile.php?id=61570099387051"
+                    target="_blank"
                   >
                     <i className="fab fa-facebook-f"></i>
                   </a>

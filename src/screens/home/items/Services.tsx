@@ -14,8 +14,8 @@ export function Services() {
             <h4 className="sub-title px-3 mb-0">What We Do</h4>
           </div>
           <h1 className="display-3 mb-4">
-            Dịch vụ vật lý trị liệu của chúng tôi được thực hiện bởi các chuyên
-            gia
+            DỊCH VỤ MASSAGE THƯ GIÃN CƠ XƯƠNG KHỚP ĐƯỢC THỰC HIỆN BỞI ĐỘI NGŨ
+            LÀNH NGHỀ GIÀU KINH NGHIỆM
           </h1>
           {/* <p className="mb-0">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
@@ -47,7 +47,7 @@ export function Services() {
                       to={`/service/${item._id}`}
                       className="btn btn-primary rounded-pill text-white py-2 px-4 mb-2"
                     >
-                      Read More
+                      Đặt lịch
                     </Link>
                   </div>
                 </div>

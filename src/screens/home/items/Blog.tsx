@@ -14,7 +14,7 @@ export function Blog() {
             <h4 className="sub-title px-3 mb-0">Our Blog</h4>
           </div>
           <h1 className="display-3 mb-4">
-            Excellent Facility and High Quality Therapy
+            AB Health tech vì sức khỏe của bạn!
           </h1>
           {/* <p className="mb-0">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
@@ -57,7 +57,7 @@ export function Blog() {
                     to={`/blog/${item._id}`}
                     className="btn btn-primary rounded-pill text-white py-2 px-4 mb-1"
                   >
-                    Read More
+                    Xem thêm
                   </Link>
                 </div>
               </div>
