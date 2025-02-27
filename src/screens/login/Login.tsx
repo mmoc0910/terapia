@@ -61,7 +61,7 @@ export function Login() {
               type="submit"
               className="btn btn-primary text-white w-100 py-3 px-5"
             >
-              đĂNG NHẬP
+              ĐĂNG NHẬP
             </button>
           </div>
           <div>
