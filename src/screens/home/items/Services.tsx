@@ -13,9 +13,8 @@ export function Services() {
           <div className="sub-style">
             <h4 className="sub-title px-3 mb-0">What We Do</h4>
           </div>
-          <h1 className="display-3 mb-4">
-            DỊCH VỤ MASSAGE THƯ GIÃN CƠ XƯƠNG KHỚP ĐƯỢC THỰC HIỆN BỞI ĐỘI NGŨ
-            LÀNH NGHỀ GIÀU KINH NGHIỆM
+          <h1 className="display-6 mb-4">
+          Dịch vụ massage thư giãn cơ xương khớp được thực hiện bởi đội ngũ lành nghề giàu kinh nghiệm
           </h1>
           {/* <p className="mb-0">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
